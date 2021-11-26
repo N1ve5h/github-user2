@@ -1,0 +1,32 @@
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+.header {
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  &__light {
+    display: flex;
+    align-items: center;
+    p {
+      margin-right: 1rem;
+    }
+    img {
+      position: relative;
+      bottom: 1px;
+    }
+  }
+  &__dark {
+    display: flex;
+    align-items: center;
+    p {
+      margin-right: 1rem;
+    }
+    img {
+      position: relative;
+      bottom: 1px;
+    }
+  }
+}
