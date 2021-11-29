@@ -2,53 +2,239 @@
   font-family: "Ubuntu", sans-serif;
 }
 
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
+body .header {
   display: flex;
   width: 85%;
   margin: 0 auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.header__light {
-  display: -webkit-box;
-  display: -ms-flexbox;
+body .header__light {
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
-.header__light p {
+body .header__light p {
   margin-right: 1rem;
 }
-
-.header__light img {
+body .header__light img {
   position: relative;
-  bottom: 1px;
 }
-
-.header__dark {
-  display: -webkit-box;
-  display: -ms-flexbox;
+body .header__dark {
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
-.header__dark p {
+body .header__dark p {
   margin-right: 1rem;
 }
-
-.header__dark img {
+body .header__dark img {
   position: relative;
-  bottom: 1px;
 }
-/*# sourceMappingURL=index.css.map */
+body main .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 2px 12px;
+}
+body main .search__image img {
+  width: 100%;
+  position: relative;
+  top: 1px;
+  right: 4px;
+}
+body main .search__input {
+  border: 0;
+  padding: 13px 0px;
+  font-size: 13px;
+}
+body main .search__input:-webkit-autofill {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+body main .search__button {
+  margin-left: 3px;
+  background-color: #0079fe;
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+}
+body main .user {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+  padding: 1.5rem 12px;
+}
+body main .user__flex {
+  display: flex;
+}
+body main .user__flex__image {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  margin-left: 1rem;
+}
+body main .user__flex__txtflex {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+body main .user__flex__txtflex__name {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  font-size: 1.2rem;
+}
+body main .user__flex__txtflex__loginName {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+}
+body main .user__flex__txtflex__github:visited {
+  color: #0079fe;
+}
+body main .user__flex__txtflex__github:hover {
+  color: aqua;
+}
+body main .user__flex__txtflex__join {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+body main .user-about {
+  margin-top: 1rem;
+}
+body main .user-about__bio {
+  text-align: left;
+  width: 85%;
+  margin: 0 auto;
+}
+body main .user-numbers {
+  display: flex;
+  margin: 1.2rem;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+body main .user-numbers__repo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+body main .user-numbers__followers {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+body main .user-numbers__following {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+body main .userInfo {
+  width: 90%;
+  margin: 2rem auto;
+}
+body main .userInfo div {
+  margin-bottom: 1rem;
+}
+body main .userInfo p {
+  display: inline;
+  margin-left: 0.5rem;
+}
+body main .userInfo svg {
+  transform: translateY(0.3125rem);
+}
+
+@media (min-width: 500px) {
+  body main .search {
+    padding: 2px 0px;
+  }
+  body main .search__input {
+    padding: 13px 60px 13px 15px;
+    font-size: 15px;
+  }
+  body main .user {
+    padding: 1.5rem 0px;
+  }
+  body main .user__flex__image {
+    width: 100px;
+    height: 100px;
+  }
+  body main .user__flex__txtflex {
+    margin-top: 10px;
+  }
+  body main .user-numbers__repo__no {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  body main .user-numbers__followers__no {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  body main .user-numbers__following__no {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  body main .userInfo {
+    display: flex;
+  }
+  body main .userInfo .display-div-1 {
+    margin-right: 1.5rem;
+  }
+}
+@media (min-width: 1440px) {
+  body .header {
+    width: 50%;
+  }
+  body main .search {
+    width: 50%;
+  }
+  body main .search__input {
+    padding: 13px 365px 13px 15px;
+    font-size: 15px;
+  }
+  body main .user {
+    width: 50%;
+  }
+  body main .user__flex__image {
+    width: 20%;
+    height: 20%;
+  }
+  body main .user__flex__txtflex {
+    margin-top: 10px;
+  }
+  body main .user__flex__txtflex__name {
+    font-size: 25px;
+  }
+  body main .user__flex__txtflex__loginName {
+    font-size: 1.2rem;
+  }
+  body main .user__flex__txtflex__join {
+    position: absolute;
+    right: 400px;
+    top: 190px;
+  }
+  body main .user-about {
+    width: 76%;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  body main .user-about__bio {
+    width: 100%;
+  }
+  body main .user-numbers {
+    width: 65%;
+    margin-left: 170px;
+    margin-right: 0;
+  }
+  body main .userInfo {
+    width: 76%;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  body main .userInfo .display-div-1 {
+    margin-right: 6.5rem;
+  }
+}/*# sourceMappingURL=index.css.map */
